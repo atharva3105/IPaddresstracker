@@ -1,0 +1,141 @@
+
+* {
+    margin: 0;
+    font-family: 'Rubik', sans-serif;
+    text-decoration: none;
+    box-sizing: border-box;
+    outline: none;
+}
+
+.top{
+    color: white;
+    background: url("images/pattern-bg.png")no-repeat top center/cover;
+    padding: 1 rem;
+    height: 40vh;
+
+}
+
+.main{
+    height: 100vh;
+}
+
+.title{
+    color: white;
+    text-align: center;
+    
+    
+}
+
+form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin: 1.75rem;
+    background-color: none;
+
+}
+#ip-input{
+    width: min(500px , 70%);
+    font-size: 1rem;
+    padding: 0.75rem 1.25rem;
+    border-bottom-left-radius: 0.75rem;
+    border-top-left-radius: 0.75rem;
+    border-color: rgb(171 169 168 / 0%);
+}
+
+button{
+    
+    padding: 0.75rem 1.25rem;
+    border-bottom-right-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+    border-color: rgb(171 169 168 / 0%);
+    background-color: black;
+}
+
+.info{
+    color: rgb(145, 134, 134);
+    background-color:white;
+    font-size: 0.80rem;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    width: 80%;
+    min-height: 20vh;
+    margin: 0px auto;
+    z-index: 500;
+    top: 25%;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1.25rem;
+    box-shadow: 4px 5px 10px 1px ;
+
+}
+
+.box{
+    width: 25%;
+    padding: 0 1.25rem;
+    border-left:1px solid black;
+    
+}
+.box>span {
+    display: block;
+}
+
+.field-name {
+    font-size: .7rem;
+    font-weight: 700;
+    color: var(--dark-gray);
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+}
+
+.info-field {
+    margin-top: .7rem;
+    font-weight: 500;
+    letter-spacing: .2px;
+    font-size: 1.25rem;
+    color: black;
+    font-weight: bold;
+}
+
+
+#map{
+    height: 80vh;
+    
+}
+@media (max-width: 770px) {
+    #ip-input {
+        width: min(380px, 70%);
+    }
+
+    .info {
+        width: 85vw;
+    }
+    #map {
+        height: 65vh;
+    }
+}
+
+@media (max-width: 600px) {
+    .top {
+        height: 35vh;
+        padding: .7rem;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .info {
+        width: 75vw;
+        flex-direction: column;
+        text-align: center;
+        gap: 1.1rem;
+        top: 12%;
+    }
+
+    .box {
+        width: 100%;
+        border: none;
+    }
+}

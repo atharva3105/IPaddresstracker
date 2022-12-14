@@ -1,0 +1,1 @@
+web: gunicorn <IPaddresstracker>.wsgi --log-file -
